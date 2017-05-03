@@ -55,6 +55,7 @@ tinkerPatch {
     useSign = true
     dex {
         dexMode = "jar"
+        //usePreGeneratedPatchDex = true //支持加固模式
         pattern = ["classes*.dex"]
         loader = []
     }
