@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //txv_content = (TextView) findViewById(R.id.txv_content);
-        //txv_content.setText("fixed!!");
+        txv_content = (TextView) findViewById(R.id.txv_content);
+        txv_content.setText("fixed!!");
     }
 }
