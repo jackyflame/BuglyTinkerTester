@@ -11,6 +11,8 @@ import com.tencent.bugly.Bugly;
 import com.tencent.bugly.beta.Beta;
 import com.tencent.tinker.loader.app.DefaultApplicationLike;
 
+import haozi.buglytinkerlib.config.BTConfig;
+
 /**
  * Created by Android Studio.
  * ProjectName: shenbian_android_cloud_speaker
@@ -31,7 +33,7 @@ public class BTApplicationLike extends DefaultApplicationLike {
         super.onCreate();
         // 这里实现SDK初始化，appId替换成你的在Bugly平台申请的appId
         // 调试时，将第三个参数改为true
-        Bugly.init(getApplication(), "900029763", false);
+        Bugly.init(getApplication(), BTConfig.BT_APPID, BTConfig.BT_DEBUG);
     }
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
